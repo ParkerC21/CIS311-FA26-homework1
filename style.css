@@ -1,0 +1,230 @@
+body {
+    background-color: hsl(228, 99%, 58%);
+    font-family: 'Inter', sans-serif;
+    color: hsl(0, 0%, 100%);
+
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex: 1;
+    min-height: 88vh;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 45%;
+    box-sizing: border-box;
+    padding-right: 15%;
+    padding-left: 3%;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 55%;
+    div {
+        padding: 8px;
+    }
+    div:hover {
+        background-color: hsl(228, 100%, 60%);
+    }
+}
+
+.top-row-left {
+    border-bottom: 2px solid hsla(220, 100%, 64%, 0.864);
+    border-right: 2px solid hsla(220, 100%, 64%, 0.864);
+    border-left: 2px solid hsla(220, 100%, 64%, 0.864);
+    width: 50%;
+    box-sizing: border-box;
+    min-height: 50%;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.top-row-right {
+    border-bottom: 2px solid hsla(220, 100%, 64%, 0.864);
+    width: 50%;
+    box-sizing: border-box;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bottom-row-left {
+    border-right: 2px solid hsla(220, 100%, 64%, 0.864);
+    border-left: 2px solid hsla(220, 100%, 64%, 0.864);
+    width: 50%;
+    box-sizing: border-box;
+    min-height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-row-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    min-height: 50%;
+}
+
+header {
+    border-bottom: 2px solid hsla(220, 100%, 64%, 0.864);
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    border-top: 2px solid hsla(220, 100%, 64%, 0.864);
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-charity {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    flex-direction: row;
+    display: flex;
+    margin-left: auto;
+}
+    
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+button {
+    flex-direction: row;
+    display: flex;
+    margin-left: auto;
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+    background: none;
+    border: none;
+}
+
+nav {
+    display: none;
+    :hover {
+        text-decoration: underline;
+    }
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 8px;
+    font-weight: 500;
+}
+
+.logo img {
+    width: 12px;
+    height: auto;
+    padding-left: 12px;
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info {
+    margin-top: auto;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 650px) {
+    .hero-left {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-right {
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    .top-row-left, .top-row-right {
+        flex-direction: column;
+        width: 100%;
+        min-height: 400px;
+       
+    }
+
+    .bottom-row-left, .bottom-row-right {
+        flex-direction: column;
+        width: 100%;
+        min-height: 400px;
+       
+    }
+
+    .top-row-left {
+        border-top: 2px solid hsla(220, 100%, 64%, 0.864);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+    .top-row-right {
+        border-top: 2px solid hsla(220, 100%, 64%, 0.864);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+    .bottom-row-left {
+        border-top: 2px solid hsla(220, 100%, 64%, 0.864);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+    .bottom-row-right {
+        border-top: 2px solid hsla(220, 100%, 64%, 0.864);
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer-charity {
+        margin-left: 0;
+        margin-top: 2px;
+    }
+}

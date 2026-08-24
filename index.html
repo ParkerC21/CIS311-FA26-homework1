@@ -7,54 +7,82 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Grid landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./assets/CSS/style.css">
 </head>
+
 <body>
+  <header>
+    <div class="logo">
+      <img src="assets/images/favicon-32x32.png" alt="Bridge Collective Logo">
+      <a href="#">Bridge Collective</a>
+    </div>
+    <nav>
+      <a href="#">About</a>
+      <a href="#">Our Work</a>
+      <a href="#">Partners</a>
+      <a href="#">Annual Report</a>
+      <a href="#">Donate</a>
+   </nav>
+   <button>
+     <img src="assets/images/icon-menu.svg" alt="Icon Menu">
+   </button>
+  </header>
+  
 
-  <!-- Nav -->
-  Bridge Collective
+  <main class="hero">
+    <div class="hero-left">
+      <h1>A classroom for every child.</h1>
+      <p>We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.</p>
+    </div>
 
-  <!-- Hero -->
-  A classroom for every child.
+    <div class="hero-right">
+      <div class="top-row-left">
+        <div class="icon-box">
+         <img src="assets/images/icon-sparkle.svg" alt="Sparkle Icon">
+          <h2>2.4M</h2>
+        </div>
+        <div class="info">
+          <h3>Students reached</h3>
+          <p>Across 31 countries since 2011.</p>
+        </div>
+      </div>
+      <div class="top-row-right">
+        <div class="icon-box">
+          <img src="assets/images/icon-plus.svg" alt="Plus Icon">
+          <h2>1,284</h2>
+        </div>
+        <div class="info">
+          <h3>Schools partnered</h3>
+          <p>In 14 countries, from Kenya to Guatemala.</p>
+        </div>
+      </div>
+      <div class="bottom-row-left">
+        <div class="icon-box">
+          <img src="assets/images/icon-arrow-right.svg" alt="Arrow Right Icon">
+          <h2>38K</h2>
+        </div>
+        <div class="info">
+        <h3>Teachers trained</h3>
+        <p>Equipped with modern tools and methodology.</p>
+        </div>
+      </div>
+      <div class="bottom-row-right">
+        <div class="icon-box">
+          <img src="assets/images/icon-trending-up.svg" alt="Trending Up Icon">
+          <h2>3.1×</h2>
+        </div>
+        <div class="info">
+          <h3>Graduation lift</h3>
+          <p>Partner schools outperform national averages 3x.</p>
+        </div>
+      </div>
+  </main>
 
-  We fund the schools, train the teachers, and measure what works — so every child we reach today becomes a graduate tomorrow.
+  <footer>
+   <a class="footer-link">© 2026 Bridge Collective</a>
+    <a class="footer-charity">Registered charity 1234567 </a>
+  </footer>
 
-  <!-- Stats -->
-  2.4M
-  Students reached
-  Across 31 countries since 2011.
-
-  1,284
-  Schools partnered
-  In 14 countries, from Kenya to Guatemala.
-
-  38K
-  Teachers trained
-  Equipped with modern tools and methodology.
-
-  3.1×
-  Graduation lift
-  Partner schools outperform national averages 3x.
-
-  <!-- Footer -->
-  © 2026 Bridge Collective
-  Registered charity 12345678
-
-  <!-- Menu panel — hidden until the hamburger is activated -->
-  About
-  Our Work
-  Partners
-  Annual Report
-  Donate
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
+
 </html>
