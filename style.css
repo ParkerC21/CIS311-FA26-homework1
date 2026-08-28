@@ -83,9 +83,17 @@ body {
 header {
     border-bottom: 2px solid hsla(220, 100%, 64%, 0.864);
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
+}
+
+.menu-wrap {
+    position: relative;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 footer {
@@ -112,7 +120,6 @@ footer {
 button {
     flex-direction: row;
     display: flex;
-    margin-left: auto;
     font-size: 30px;
     color: hsl(0, 0%, 100%);
     background: none;
@@ -120,10 +127,11 @@ button {
 }
 
 nav {
-    display: none;
-    :hover {
-        text-decoration: underline;
-    }
+    display: flex;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 a {
@@ -162,6 +170,73 @@ p {
     font-size: 16px;
     letter-spacing: 0.5px;
 }
+
+.hamberger-button {
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    font-size: 40px;
+    text-align: left;
+    margin: 24px;
+
+}
+
+nav li {
+    margin-bottom: 16px;
+}
+
+#nav-menu {
+    position: fixed;
+    left: auto;
+    top: calc(2.5rem + 2px);
+    right: 0;
+    bottom: 0;
+    border: none;
+    min-height: 94%;
+    width: 27.5%;
+    transition: all 0.3s ease;
+}
+
+header:has(#nav-menu:popover-open) .hamberger-button img:first-child {
+    display: none;
+}
+
+header .close-icon {
+    display: none;
+}
+
+header {
+    height: 2.5rem;
+}
+
+header:has(#nav-menu:popover-open) .close-icon {
+    display: block;
+}
+
+#nav-menu:popover-open {
+    background-color: hsl(228, 99%, 58%);
+    display: flex;
+    justify-content: flex-end;
+    left: auto;
+    right: 0;
+
+}
+
+.vissually-hidden {
+    position: absolute;
+}
+
+#nav-menu::backdrop {
+    background-color: rgba(0, 0, 0, 0.124);
+    margin-top: 3rem;
+}
+
+
 
 @media (max-width: 650px) {
     .hero-left {
@@ -227,4 +302,27 @@ p {
         margin-left: 0;
         margin-top: 2px;
     }
+
+   #nav-menu {
+       top: 3.05rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: 0;
+       margin: 0;
+    }
+    .hamberger-button {
+        position: relative;
+        z-index: 2;
+    }
+    #nav-menu:popover-open {
+        background-color: hsl(228, 99%, 58%);
+        display: flex;
+        justify-content: center;
+        right: 0;
+
 }
+}
+
+

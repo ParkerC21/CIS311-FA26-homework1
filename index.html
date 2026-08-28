@@ -13,19 +13,31 @@
 <body>
   <header>
     <div class="logo">
-      <img src="assets/images/favicon-32x32.png" alt="Bridge Collective Logo">
+      <img src="../assets/images/favicon-32x32.png" alt="Bridge Collective Logo">
       <a href="#">Bridge Collective</a>
     </div>
-    <nav>
-      <a href="#">About</a>
-      <a href="#">Our Work</a>
-      <a href="#">Partners</a>
-      <a href="#">Annual Report</a>
-      <a href="#">Donate</a>
-   </nav>
-   <button>
-     <img src="assets/images/icon-menu.svg" alt="Icon Menu">
-   </button>
+
+    <div class="menu-wrap">
+      <button type="button"
+              class="hamberger-button"
+              popovertarget="nav-menu"
+              aria-label="Open navigation menu">
+        <img src="../assets/images/icon-menu.svg" alt="Icon Menu">
+        <img src="../assets/images/icon-close.svg" alt="close icon" class="close-icon">
+      </button>
+
+      <div id="nav-menu" popover>
+        <nav>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Annual Report</a></li>
+            <li><a href="#">Donate</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
   
 
@@ -38,7 +50,7 @@
     <div class="hero-right">
       <div class="top-row-left">
         <div class="icon-box">
-         <img src="assets/images/icon-sparkle.svg" alt="Sparkle Icon">
+         <img src="../assets/images/icon-sparkle.svg" alt="Sparkle Icon">
           <h2>2.4M</h2>
         </div>
         <div class="info">
@@ -48,7 +60,7 @@
       </div>
       <div class="top-row-right">
         <div class="icon-box">
-          <img src="assets/images/icon-plus.svg" alt="Plus Icon">
+          <img src="../assets/images/icon-plus.svg" alt="Plus Icon">
           <h2>1,284</h2>
         </div>
         <div class="info">
@@ -58,7 +70,7 @@
       </div>
       <div class="bottom-row-left">
         <div class="icon-box">
-          <img src="assets/images/icon-arrow-right.svg" alt="Arrow Right Icon">
+          <img src="../assets/images/icon-arrow-right.svg" alt="Arrow Right Icon">
           <h2>38K</h2>
         </div>
         <div class="info">
@@ -68,7 +80,7 @@
       </div>
       <div class="bottom-row-right">
         <div class="icon-box">
-          <img src="assets/images/icon-trending-up.svg" alt="Trending Up Icon">
+          <img src="../assets/images/icon-trending-up.svg" alt="Trending Up Icon">
           <h2>3.1×</h2>
         </div>
         <div class="info">
@@ -86,3 +98,4 @@
 </body>
 
 </html>
+
